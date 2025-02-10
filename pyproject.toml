@@ -1,0 +1,42 @@
+[project]
+name = "ai-agent-playground"
+version = "0.1.0"
+description = "Default template for PDM package"
+
+dependencies = [
+    "pydantic-ai>=0.0.23",
+    "python-dotenv>=1.0.1"
+]
+requires-python = "==3.9.*"
+readme = "README.md"
+license = {text = "MIT"}
+
+[dependency-groups]
+test = [
+    "pytest",
+    "black",
+    "isort",
+]
+dev = [
+    "pytest>=8.3.4",
+    "black>=25.1.0",
+    "isort>=6.0.0",
+    "ai-agent-playground @ file:///${PROJECT_ROOT}/",
+]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+python_files = ["test_*.py"]
+
+[tool.black]
+line-length = 88
+target-version = ["py39"]
+
+[tool.isort]
+profile = "black"
+
+[tool.pdm]
+distribution = false
+package-dir = "src"
+
+

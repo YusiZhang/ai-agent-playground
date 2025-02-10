@@ -1,0 +1,38 @@
+# Python virtual environment
+.venv/
+venv/
+ENV/
+
+# PDM specific
+.pdm-python
+__pypackages__/
+.pdm-build/
+
+# Python bytecode
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Distribution / packaging
+dist/
+build/
+*.egg-info/
+
+# Test coverage
+.coverage
+htmlcov/
+.pytest_cache/
+
+# IDE specific files
+.idea/
+.vscode/
+*.swp
+*.swo
+
+# Environment variables
+.env
+.env.local
+
+# Operating System
+.DS_Store
+Thumbs.db
