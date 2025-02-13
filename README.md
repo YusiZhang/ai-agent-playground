@@ -18,6 +18,12 @@ pdm install
 pdm install --dev
 ```
 
+# Add new dependencies
+`pdm add <dependency>`  
+
+# Remove dependencies
+`pdm remove <dependency>`
+
 ## Development
 
 ### Setup
