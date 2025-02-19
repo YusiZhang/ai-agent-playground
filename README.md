@@ -42,7 +42,7 @@ pdm run pytest
 ### Code Formatting
 
 ```bash
-# Format code with black
+ # Format code with black
 pdm run black .
 
 # Sort imports

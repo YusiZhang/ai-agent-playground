@@ -1,0 +1,24 @@
+{
+  "configurations": [
+    {
+      "type": "debugpy",
+      "request": "launch",
+      "name": "Launch Program",
+      "program": "${workspaceFolder}/src/ai_agent_playground/${input:programName}.py"
+    }
+  ],
+  "inputs": [
+    {
+      "type": "pickString",
+      "id": "programName",
+      "description": "Select the Python file to debug",
+      "options": [
+        "main",
+        "agent_deligation_simply",
+        "orchestrating_agent_routine_and_handoff",
+        "programmatic_handoff",
+        "rag"
+      ]
+    }
+  ]
+}
